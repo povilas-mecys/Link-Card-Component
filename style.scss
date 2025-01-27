@@ -11,7 +11,7 @@ body {
 // Link cards container
 .link-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 362px), 1fr)); // Responsive grid layout
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 362px), 1fr)); 
     gap: 24px;
     margin: 0 auto;
 
@@ -116,6 +116,7 @@ body {
                     text-underline-offset: 6px;
                     position: relative;
                     line-height: 1.5;
+                    transition: 0.25s;
 
                     &::before {
                         content: "";

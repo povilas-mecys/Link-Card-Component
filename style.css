@@ -106,6 +106,7 @@ body {
   text-underline-offset: 6px;
   position: relative;
   line-height: 1.5;
+  transition: 0.25s;
 }
 .link-cards .link-card_links li a::before {
   content: "";
