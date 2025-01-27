@@ -90,7 +90,7 @@ body {
 }
 @media screen and (min-width:740px) {
   .link-cards .link-card_links {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
   }
 }
 .link-cards .link-card_links li {
