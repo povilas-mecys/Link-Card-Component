@@ -1,12 +1,11 @@
-// Import necessary mixins and variables
 @import "mixins.scss";
 @import "variables.scss";
 
-// Style for the body element
+ 
 body {
     display: grid;
     gap: 24px;
-    place-items: center; // Center-align items in the grid
+    place-items: center; 
 }
 
 // Link cards container
@@ -16,7 +15,6 @@ body {
     gap: 24px;
     margin: 0 auto;
 
-    // Medium screen adjustments
     @media #{$min_md} {
         grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
     }
@@ -35,7 +33,7 @@ body {
                 background: color-mix(in srgb, $lgray 80%, white 60%);
 
                 &_description {
-                    border-bottom: 1px solid $red; // Red border for description
+                    border-bottom: 1px solid $red; 
                 }
 
                 &_links {
@@ -43,7 +41,7 @@ body {
                         a {
                             &::before {
                                 filter: none;
-                                opacity: 1; // Full opacity for hover effect
+                                opacity: 1; 
                             }
                         }
                     }
@@ -56,7 +54,7 @@ body {
     .link-card {
         background: color-mix(in srgb, $lgray 80%, white 60%);
         border: 1px solid $xlbeige;
-        border-radius: 2px; // Rounded corners
+        border-radius: 2px; 
         padding: $margin_sm calc($margin_sm / 2);
         display: flex;
         flex-direction: column;
@@ -75,13 +73,13 @@ body {
 
         &_title {
             margin: 0;
-            @include c(400); // Custom mixin for typography
+            @include c(400); 
             font-weight: normal;
             font-size: 20px;
             line-height: 1.5;
 
             @media #{$min_md} {
-                font-size: 24px; // Larger font size on medium screens
+                font-size: 24px; 
             }
         }
 
@@ -89,7 +87,7 @@ body {
             margin: 0;
             border-bottom: 1px solid $xlbeige;
             padding-bottom: 24px;
-            @include m(400); // Another custom typography mixin
+            @include m(400); 
             font-size: 18px;
             line-height: 1.5;
         }
@@ -100,7 +98,7 @@ body {
             margin: 0;
             display: grid;
             gap: 16px;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, 324px), 1fr)); // Responsive grid layout for links
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 324px), 1fr)); 
 
             @media #{$min_md} {
                 grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
@@ -121,7 +119,7 @@ body {
 
                     &::before {
                         content: "";
-                        background: url("img/arrow_right.svg") center / 16px 16px no-repeat; // Icon styling
+                        background: url("img/arrow_right.svg") center / 16px 16px no-repeat; 
                         width: 16px;
                         height: 16px;
                         position: absolute;
@@ -132,21 +130,21 @@ body {
                     }
 
                     &:hover {
-                        color: $red; // Hover color
+                        color: $red;
                         text-decoration-color: $lbeige;
 
                         &::before {
                             filter: none;
-                            opacity: 1; // Full opacity on hover
+                            opacity: 1;
                         }
                     }
 
                     &:active {
-                        color: $black; // Active state color
+                        color: $black;
                         text-decoration-color: $lbeige;
 
                         &::before {
-                            filter: brightness(0) saturate(100%) grayscale(100%) contrast(100%); // Adjust icon for active state
+                            filter: brightness(0) saturate(100%) grayscale(100%) contrast(100%); 
                         }
                     }
                 }
